@@ -1,0 +1,153 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Fullscreen Container */
+.fullscreen-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  width: 100vw; 
+  overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 30px;
+  color: black;
+  z-index: 100;
+}
+
+.navbar .logo {
+  height: 60px;
+  width: 180px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-image: url(logo.jpg);
+  background-size: cover;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    display: none;
+  }
+}
+
+/* Carousel Section */
+.carousel {
+  position: relative;
+  flex: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+
+.carousel-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Carousel Content */
+.carousel-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-content h1 {
+  font-size: 3rem;
+}
+
+.carousel-content p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .carousel-content h1 {
+    font-size: 2rem;
+  }
+
+  .carousel-content p {
+    font-size: 1rem;
+  }
+}
+
+/*  Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 0.8rem;
+  }
+}
