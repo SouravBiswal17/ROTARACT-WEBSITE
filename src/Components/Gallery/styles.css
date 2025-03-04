@@ -1,0 +1,24 @@
+.swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.926)!important;
+    width: 14px !important;
+    height: 14px!important;
+  }
+    
+  .swiper-pagination-bullet-active {
+      background-color: white!important;
+  }
+  
+  
+  .swiper-button-next:hover::after,
+  .swiper-button-prev:hover::after {
+    color: white;
+    transition: all 0.5s; 
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 40px!important;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.721);
+  }
+  
